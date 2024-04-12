@@ -22,4 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  const inputSearch = document.querySelector(".search-form__input");
+  const formSearchWrapper = document.querySelector(".header__right");
+
+  inputSearch.addEventListener("focus", function () {
+    formSearchWrapper.classList.add("is_active");
+  });
+
+  inputSearch.addEventListener("blur", function () {
+    formSearchWrapper.classList.remove("is_active");
+  });
 });
