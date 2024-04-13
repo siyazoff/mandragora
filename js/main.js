@@ -33,4 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   inputSearch.addEventListener("blur", function () {
     formSearchWrapper.classList.remove("is_active");
   });
+
+  if (document.querySelector("[data-tabs]")) {
+    new Tabby("[data-tabs]");
+  }
 });
